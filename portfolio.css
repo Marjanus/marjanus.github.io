@@ -1,0 +1,175 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax1 { 
+    background-image: url("images/keyboard.jpg");
+    height: 100%; 
+    /* allows vertically centering .caption*/
+    display: flex;
+    justify-content: center;
+}
+
+.caption {
+	width: 100%; 
+    align-self: center;
+}
+
+.captionText {
+	padding: 18px;
+    border: 1px solid #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+.captionText > a{
+	color: #fff;
+}
+
+.captionText:hover {
+	border: 1px solid #9FFFFF;
+}
+
+.captionText > a:hover {
+	color: #9FFFFF;
+}
+
+.aboutMe {
+	min-height: 400px;
+	height: auto;
+	overflow: auto;
+}
+
+.aboutMe > h2 {
+    padding-top: 1.5em;
+}
+
+.aboutMeText {
+  text-align: justify;
+  line-height: 150%;    
+}
+
+.aboutMe .img-responsive {
+	margin: auto;
+}
+
+@media (min-width: 768px){
+	.aboutMe .row {
+		margin-top: 40px;
+        margin-bottom: 80px;
+	}	
+}
+
+@media (max-width: 767px){
+    .aboutMeText{
+        margin-top: 20px;
+    }
+    
+    .aboutMe .img-responsive {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 601px) {
+    .aboutMeText p {
+        padding: 0 6em;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 426px) {
+    .aboutMeText p {
+        padding: 0 3em;
+    }
+}
+
+.parallax2 { 
+    background-image: url("images/computer.jpg");
+    height: 60%; 
+}
+
+.projects {
+    background-color: #F8F8F8;
+}
+
+.projectsContainer {
+	padding: 2em 0;
+}
+
+.projectsContainer > .row {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.projectHeader {
+    padding-bottom: 0.5em;
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+    .projectsContainer > .row {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+}
+    
+@media (max-width: 767px){
+    .projectsContainer > .row {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    
+   .projectHeader {
+        padding: 1em 0;
+    }
+    
+    .projectImage {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.contacts {
+    background-color: #333;
+    color: #5C5CFF;
+    padding-bottom: 2em;
+}
+
+.contactsList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+}
+
+.contactsList > li {
+    display: inline;
+    padding: 1em;
+}
+
+.contacts a:hover {
+	color: #fff;
+}
